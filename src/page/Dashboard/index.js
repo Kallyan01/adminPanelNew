@@ -108,7 +108,7 @@ function index() {
         </div>
       </div>
 
-      <div className="rtsidebar h-screen flex flex-col md:col-span-3 col-span-10 ">
+      <div className="rtsidebar h-screen flex flex-col md:col-span-3 col-span-10 pb-8">
         <div className="tabtitle flex justify-between mx-5 py-2 border-b-2 border-gray-100">
           <p className="fs-9 font-semibold ">Upcoming Meeting</p>
           <BiDotsVerticalRounded />

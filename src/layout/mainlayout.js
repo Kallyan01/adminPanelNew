@@ -15,6 +15,7 @@ import { MdNotificationsActive } from "react-icons/md";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 function Mainlayout() {
+  console.log(window.screen.height)
   const { nav } = useContext(GlobalContext);
   const [navOpen, setNavOpen] = nav;
   let sidebar = navOpen
@@ -28,10 +29,10 @@ function Mainlayout() {
       </div>
       <div className=" grid grid-cols-5 col-span-5">
         <div className={sidebar}>
-          <div className="closeBtn flex justify-end  w-100 p-3 text-red-500 fs-10 flex" onClick={()=>setNavOpen(false)}>
+          {window.screen.height<900?(<div className="closeBtn flex justify-end  w-100 p-3 text-red-500 fs-10 flex" onClick={()=>setNavOpen(false)}>
             <p className="fs-3 font-bold">Close</p>
             <AiOutlineCloseCircle />
-          </div>
+          </div>):<></>}
           <div className="menulist list-none pt-20">
             <NavLink to="/dashboard">
               <li className="menuitem p-2 px-6 flex">

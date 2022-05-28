@@ -200,8 +200,15 @@ svg {
 {
   width: 80%;
 }
-
+.closeBtn
+{
+  display: none;
+}
 @media screen and (max-width: 760px) {
+  .closeBtn
+{
+  display: flex;
+}
   .logo
 {
   width: 30%;
