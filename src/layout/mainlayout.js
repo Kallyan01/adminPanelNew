@@ -19,11 +19,11 @@ function Mainlayout() {
     ? "sidebar absolute top-0 left-0 w-3/4 md:w-auto col-span-none md:relative md:block md:col-span-1"
     : "hidden";
   return (
-    <div class="layout  grid light grid-cols-5 gap-1 w-100">
+    <div class="layout grid light grid-cols-5 gap-1 w-100">
       <div className="col-span-5">
         <Navbar />
       </div>
-      <div className="grid grid-cols-5 col-span-5">
+      <div className="lay-body grid grid-cols-5 col-span-5">
         <div className={sidebar}>
           <div className="menulist list-none pt-40">
             <NavLink to="/dashboard">

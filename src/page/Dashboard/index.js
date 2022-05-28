@@ -5,6 +5,7 @@ import { FaAngleDown, FaFilter } from "react-icons/fa";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import Activitynotification from "../../components/activityNotification";
 import Projcard from "../../components/projcard"
+import Invoicecard from "../../components/invoicecard"
 
 import u1 from "../../assets/images/user5.jpg";
 import u2 from "../../assets/images/user6.jpg";
@@ -13,8 +14,8 @@ import u4 from "../../assets/images/user4.jpg";
 
 function index() {
   return (
-    <div className="grid  grid-cols-10 gap-0">
-      <div className="md:col-span-7 col-span-10 flex flex-col m-6">
+    <div className="grid grid-cols-10 gap-0">
+      <div className="dash-body pb-8 md:col-span-7 col-span-10 flex flex-col m-6 overflow-scroll ">
         <div className="wlcmmsg my-3 fs-10 font-semibold">
           <h2>Welcome back, Andrew!</h2>
           <p className="fs-1 text-gray">
@@ -99,7 +100,11 @@ function index() {
               </div>
             </div>
           </div>
-       
+          <div className="flex flex-row justify-between flex-wrap">
+            <Invoicecard/>
+            <Invoicecard/>
+            <Invoicecard/>
+          </div>
         </div>
       </div>
 
