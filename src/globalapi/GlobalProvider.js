@@ -4,7 +4,7 @@ export const GlobalContext = createContext({});
 
 export const GlobalProvider = ({children}) => {
 
-    const [navOpen, setNavOpen] = useState(false);
+    const [navOpen, setNavOpen] = useState(true);
 
     return (
         <GlobalContext.Provider value = {
