@@ -3,6 +3,7 @@ import { GlobalContext } from "../globalapi/GlobalProvider";
 import { Outlet, NavLink } from "react-router-dom";
 import { RiDashboardFill } from "react-icons/ri";
 import Navbar from "../components/site/navbar";
+import {AiFillCloseSquare} from "react-icons/ai"
 import {
   FaProjectDiagram,
   FaRegPaperPlane,
@@ -11,6 +12,8 @@ import {
 import {IoNewspaperSharp} from "react-icons/io5"
 import {IoIosCall} from "react-icons/io"
 import {MdNotificationsActive} from "react-icons/md"
+import {AiOutlineCloseCircle} from "react-icons/ai"
+
 
 function Mainlayout() {
   const { nav } = useContext(GlobalContext);
@@ -18,12 +21,13 @@ function Mainlayout() {
   let sidebar = navOpen
     ? "sidebar absolute top-0 left-0 w-3/4 md:w-auto col-span-none md:relative md:block md:col-span-1"
     : "hidden";
+    let body = navOpen?"body col-span-5 md:col-span-4":"body col-span-5"
   return (
     <div class="layout grid light grid-cols-5 gap-1 w-100">
       <div className="col-span-5">
         <Navbar />
       </div>
-      <div className="lay-body grid grid-cols-5 col-span-5">
+      <div className=" grid grid-cols-5 col-span-5">
         <div className={sidebar}>
           <div className="menulist list-none pt-40">
             <NavLink to="/dashboard">
@@ -78,7 +82,7 @@ function Mainlayout() {
             </NavLink>
           </div>
         </div>
-        <div className="body col-span-5 md:col-span-4">
+        <div className={body}>
           <Outlet />
         </div>
       </div>

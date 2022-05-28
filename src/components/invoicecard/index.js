@@ -1,6 +1,7 @@
 import React from "react";
 import u1 from "../../assets/images/user2.jpg"
 
+
 function index() {
   return (
     <div className="invoicecard border border-gray-200 p-3 m-2">
