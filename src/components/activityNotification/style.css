@@ -1,0 +1,29 @@
+.activityTab
+{
+    position: relative;
+}
+.activityTab::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #14A9F9;
+}
+.userPic img
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.info
+{
+    width: 80%;
+}
+.userPic
+{
+    width: 20%;
+}

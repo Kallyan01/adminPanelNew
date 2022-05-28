@@ -1,0 +1,23 @@
+.userImg img, .userImg p
+{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background-color: rgb(240, 240, 240);
+}
+.userImg img:nth-child(2)
+{
+    position: relative;
+    left: -10px;
+}
+.userImg img:nth-child(3)
+{
+    position: relative;
+    left: -20px;
+}
+.userImg p
+{
+    position: relative;
+    left: -30px;
+}

@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/*Site Colors */
+.bg-primary {
+  background-color: #14a9f9;
+}
+.text-primary {
+  color: #14a9f9;
+}
+.text-gray {
+  color: #6e6f7d;
+}
+.bg-primary-deep {
+  background-color: #7a9fff;
+}
+.bg-primary-light {
+  background-color: #7ad1ff;
+}
+.bg-violate {
+  background-color: #b97aff;
+}
+.bg-black-transparent {
+  background-color: rgba(12, 12, 12, 0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* FontSize */
+.fs-exs {
+  font-size: 0.4em !important;
+}
+.fs-1 {
+  font-size: 0.5em !important;
+}
+.fs-2 {
+  font-size: 0.55em !important;
+}
+.fs-3 {
+  font-size: 0.6em !important;
+}
+.fs-4 {
+  font-size: 0.65em !important;
+}
+.fs-5 {
+  font-size: 0.7em !important;
+}
+.fs-6 {
+  font-size: 0.8em !important;
+}
+.fs-7 {
+  font-size: 0.9em !important;
+}
+.fs-8 {
+  font-size: 1em !important;
+}
+.fs-9 {
+  font-size: 1.2em !important;
+}
+.fs-10 {
+  font-size: 1.5em !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Theme Setup CSS */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.light .sidebar {
+  background: rgba(247, 247, 247, 0.698);
+}
+.light .body {
+  background: #ffffff;
+}
+
+/* Dark Mode */
+.dark .sidebar {
+  background: rgb(28, 28, 28);
+}
+.dark .body {
+  background: #000000;
+}
+
+/* Custom css Starts*/
+
+.rtsidebar {
+  overflow-y: scroll;
+}
+.userproImg img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.vendorproImg img
+{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.sidebar,
+.body {
+  height: 100vh;
+}
+input {
+  border: none;
+  outline: none;
+}
+.logo
+{
+  width: 20%;
+}
+.searchbar {
+  background-color: #f6f6f6;
+  color: rgba(28, 48, 74, 0.5);
+  width: 60%;
+}
+.searchbar input
+{
+  width: 100%;
+}
+.userDet
+{
+  width: 20%;
+}
+
+.sidebar {
+  
+  z-index: 100;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  backdrop-filter: blur(4px);
+}
+svg {
+  margin: auto 0px;
+}
+.menuitem {
+  color: rgba(28, 48, 74, 0.5);
+  font-weight: 500;
+  cursor: pointer;
+}
+.active .menuitem {
+  border-left: 5px solid #14a9f9;
+  color: #14a9f9;
 }
 
-.App-link {
-  color: #61dafb;
+.card-lg {
+  width: 250px;
+  height: 150px;
+}
+.card {
+  width: 220px;
+  height: 150px;
+}
+.invoicecard
+{
+  width: 250px;
+}
+.progressbar
+{
+  height: 7px;
+  border-radius: 20px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #d4d4d4;
+}
+.progress
+{
+  height: 7px;
+  width: 75%;
+  background-color: #14a9f9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 760px) {
+  .card-lg {
+    width: 100%;
+    height: 150px;
   }
-  to {
-    transform: rotate(360deg);
+  .card {
+    width: 100%;
+    height: 150px;
   }
+  .invoicecard
+{
+  width: 100%;
+}
 }
