@@ -26,12 +26,12 @@ function Index() {
           placeholder="Search for Projects"
         />
       </div>
-      <div className="userDet flex flex-row">
+      <div className="userDet flex flex-row mx-5 md:mx-0">
         <div className="userproImg p-3 text-center align-middle">
           <img src={uimg} alt="userImage" />
         </div>
         <div className="userInfo flex flex-col justify-center align-middle">
-          <p className="uName fs-4 md:fs-8">Oliver Smith</p>
+          <p className="uName fs-2 md:fs-8">Oliver Smith</p>
           <p className="uType fs-1 md:fs-5">Vendor</p>
         </div>
         <div className="visitProfile flex flex-col justify-center align-middle mx-5">
